@@ -1,0 +1,14 @@
+@url = https://8080-danilozanet-gamessw2202-hprbmf4le0f.ws-us116.gitpod.io/
+
+GET {{url}}/plataformas
+
+###
+POST {{url}}/plataformas
+Content-Type: application/json
+
+{
+    "nome": "Mobile"
+}
+
+###
+GET {{url}}/plataformas/2
