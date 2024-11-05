@@ -1,0 +1,29 @@
+@url = https://8080-danilozanet-gamessw2202-5g94wtxte94.ws-us116.gitpod.io
+
+GET {{url}}/jogos
+
+###
+POST {{url}}/jogos
+Content-Type: application/json
+
+{
+    "titulo": "Borderlands 3",
+    "plataformas": [
+        {"id": 1},
+        {"id": 2}
+    ]
+}
+
+###
+DELETE {{url}}/jogos/1
+
+###
+PUT {{url}}/jogos/1
+Content-Type: application/json
+
+{
+    "titulo": "Vampite Survivors - Alterado",
+    "plataformas": [
+        {"id": 1}
+    ]
+}
